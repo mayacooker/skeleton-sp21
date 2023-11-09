@@ -1,11 +1,7 @@
 public class HelloNumbers {
     public static void main(String[] args) {
-        int x = 1;
-        int total = 0;
-        while (x <= 10) {
-            System.out.print(total + " ");
-            total = total + x;
-            x = x + 1;
+        for (int i = 0, j = 0; i < 10; i += 1, j = i + j) {
+            System.out.println(j);
         }
-	}
-} 
+    }
+}
